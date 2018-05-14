@@ -1,0 +1,15 @@
+You must install heyu https://github.com/HeyuX10Automation/heyu/releases
+Then you must setup your configure file in /etc/heyu/x10.conf
+Inside x10.conf added all devices that you will be using as:
+   ex. ALIAS docks M3
+       // docks could be replaced with the desired module name
+       // M would be the "housecode" on the X10 module, in this case M
+       // check the lettered dial on your module to see what it's set too.
+       // 3 is the unit code, check the numbered dial on your module to see
+       // what it's set too
+Make sure device path is properly set
+Make sure binary path is properly set, it should be /local/usr/bin/heyu
+
+roslaunch heyu_X10 heyu.launch, interface with the modules as services. 
+Use /heyu/MODULENAME/command to change their state, use /heyu/MODULENAME/state 
+to query the modules current state.

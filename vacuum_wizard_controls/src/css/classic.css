@@ -1,0 +1,36 @@
+/*
+ * Stylesheet for the vacuum wizard
+ */
+
+#robotWidget
+{
+    border: 2px solid #0a18af;
+}
+
+
+/* Add a border to each graph */
+.PlotWidget
+{
+    border: 1px solid #0a18af;
+}
+
+
+QLabel#RobotTitle
+{
+    font-weight: bold;
+    font-size: 12pt;
+    color: #0a18af;
+}
+
+/* Style for each RobotWidget's title (name) */
+QDockWidget
+{
+    color: darkblue;
+    font-weight: bold;
+}
+
+
+QPushButton
+{
+    margin: 1px;
+}

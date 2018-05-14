@@ -1,0 +1,9 @@
+<launch>
+  <node pkg="heyu_X10" type="heyu_node.py" name="heyu">
+    <!-- The path to the heyu configuration file-->
+    <param name="heyu_config_path" value="/etc/heyu/x10.conf"/>
+    <!-- The path to the heyu executable -->
+    <param name="heyu_bin_path" value="/usr/local/bin/heyu"/>
+  </node>
+
+</launch>

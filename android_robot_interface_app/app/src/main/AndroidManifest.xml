@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="uml_robotics.robotnexus">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/svg_app_icon"
+        android:label="Robot Link"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RobotSelector"
+            android:label="Nearby Robots"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".ControllerService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".RobotLink"
+            android:label="@string/title_activity_robot_link"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".NotificationViewService"
+            android:enabled="true"
+            android:exported="true" />
+
+
+        <service
+            android:name=".StartForegroundService"
+            android:enabled="true"
+            android:exported="true"></service>
+    </application>
+
+</manifest>

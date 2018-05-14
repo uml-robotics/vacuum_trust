@@ -1,0 +1,4 @@
+jsonschema >= 2.5.1
+ujson
+xmltodict
+bitarray

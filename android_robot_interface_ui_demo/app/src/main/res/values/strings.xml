@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UI_Testing2</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_info_screen">InfoScreen</string>
+</resources>

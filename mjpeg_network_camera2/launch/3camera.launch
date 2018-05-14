@@ -1,0 +1,29 @@
+<launch>
+  <arg name="port" value="80"/>
+  <arg name="request" value="/video.mjpg"/>
+
+  <node name="c35" pkg="mjpeg_network_camera2" type="streamed_camera.py" output="screen">
+    <rosparam param="host">c35.lan</rosparam>
+    <rosparam param="port" subst_value="True">$(arg port)</rosparam>
+    <rosparam param="request" subst_value="True">$(arg request)</rosparam>
+    <rosparam param="frame_id">/experiment/c35/camera</rosparam>
+    <rosparam param="topic">/experiment/c35/camera/image/compressed</rosparam>
+  </node>
+
+  <node name="c09" pkg="mjpeg_network_camera2" type="streamed_camera.py" output="screen">
+    <rosparam param="host">c09.lan</rosparam>
+    <rosparam param="port" subst_value="True">$(arg port)</rosparam>
+    <rosparam param="request" subst_value="True">$(arg request)</rosparam>
+    <rosparam param="frame_id">/experiment/c09/camera</rosparam>
+    <rosparam param="topic">/experiment/c09/camera/image/compressed</rosparam>
+  </node>
+
+  <node name="c23" pkg="mjpeg_network_camera2" type="streamed_camera.py" output="screen">
+    <rosparam param="host">c23.lan</rosparam>
+    <rosparam param="port" subst_value="True">$(arg port)</rosparam>
+    <rosparam param="request" subst_value="True">$(arg request)</rosparam>
+    <rosparam param="frame_id">/experiment/c23/camera</rosparam>
+    <rosparam param="topic">/experiment/c23/camera/image/compressed</rosparam>
+  </node>
+
+</launch>

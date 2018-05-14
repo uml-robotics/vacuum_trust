@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RosAndroid</string>
+    <string name="tl_OpenDrawer">"Open Drawer"</string>
+    <string name="tl_Closerawer">"Close Drawer"</string>
+</resources>

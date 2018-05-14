@@ -1,0 +1,7 @@
+<robot>
+    <name>RobotB</name>
+    <model>IDK</model>
+    <state>0</state>
+    <progression></progression>
+    <mod_name>robot_a</mod_name>
+</robot>

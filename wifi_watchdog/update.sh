@@ -1,0 +1,1 @@
+../gitautoupdate/update.sh

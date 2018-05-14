@@ -1,0 +1,2 @@
+# creates a /dev/neato symlink to the neato device
+ATTRS{idProduct}=="780b",ATTRS{idVendor}=="2108", ACTION=="add", SYMLINK+="neato"

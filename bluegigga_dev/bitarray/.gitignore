@@ -1,0 +1,8 @@
+*~
+*.pyc
+*.egg-info
+*.so
+*.o
+README.html
+build/
+dist/

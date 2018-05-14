@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/alert_three_box">
+
+        <TextView
+            android:id="@+id/alert_three_content"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Hello, I am bender. And I am a robot that has a lot to say. That's right I do."
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/alert_three_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/alert_three_content"
+            android:layout_toEndOf="@+id/alert_three_content"
+            android:src="@drawable/svg_ok"
+            android:layout_marginStart="5dp"/>
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/alert_three_button1"
+        android:layout_width="150dp"
+        android:layout_height="65dp"
+        android:text="Ok"
+        android:textAllCaps="false"
+        android:layout_below="@id/alert_three_box"
+        android:layout_alignStart="@+id/alert_three_box"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/alert_three_button2"
+        android:layout_width="150dp"
+        android:layout_height="65dp"
+        android:text="No"
+        android:textAllCaps="false"
+        android:layout_below="@+id/alert_three_box"
+        android:layout_alignEnd="@+id/alert_three_box"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/alert_three_info"
+        android:layout_width="150dp"
+        android:layout_height="65dp"
+        android:text="More Info"
+        android:textAllCaps="false"
+        android:layout_below="@+id/alert_three_button2"
+        android:layout_alignStart="@+id/alert_three_button2" />
+    <Button
+        android:id="@+id/alert_three_button3"
+        android:layout_width="150dp"
+        android:layout_height="65dp"
+        android:text="Always"
+        android:textAllCaps="false"
+        android:layout_below="@+id/alert_three_button1"
+        android:layout_alignStart="@+id/alert_three_button1" />
+
+</RelativeLayout>
+

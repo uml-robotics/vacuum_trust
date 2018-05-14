@@ -1,0 +1,2 @@
+# creates a /dev/bluegiga symlink to the bluegiga device
+ATTRS{manufacturer}=="Bluegiga", ACTION=="add", SYMLINK+="bluegiga"

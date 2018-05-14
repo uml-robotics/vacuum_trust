@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Robot Nexus</string>
+    <string name="title_activity_robot_nexus">Robot Nexus</string>
+    <string name="title_activity_robot_link">RobotLink</string>
+</resources>

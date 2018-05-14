@@ -1,0 +1,6 @@
+<launch>
+<node name="vacuum_stage" pkg="stage_ros" type="stageros" args="$(find vacuum_simulation)/world/vacuum.world"/>
+<node name="teleop" pkg="key_teleop" type="key_teleop.py" output="screen">
+    <remap from="key_vel" to="/robot_0/cmd_vel"/>
+</node>
+</launch>

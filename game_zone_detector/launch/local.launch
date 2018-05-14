@@ -1,0 +1,13 @@
+<launch>
+    <node name="hokuyo_node" 
+          pkg="hokuyo_node" 
+          type="hokuyo_node" >
+      <remap from="/scan" to="/experiment/game_zone_detector/base_scan" />
+    </node>
+
+    <node name="game_zone_detector" 
+          pkg="game_zone_detector" 
+          type="game_zone_detector.py" />
+
+
+</launch>

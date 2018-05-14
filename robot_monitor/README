@@ -1,0 +1,12 @@
+
+IGNOREING CHANGES TO config.cfg
+===============================
+http://stackoverflow.com/a/3320183
+
+Ignore changes to config file
+
+    git update-index --assume-unchanged config.cfg
+
+Start tracking changes again
+
+    git update-index --no-assume-unchanged config.cfg
